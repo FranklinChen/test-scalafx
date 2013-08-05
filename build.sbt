@@ -2,9 +2,17 @@ name := "test-scalafx"
 
 organization := "com.franklinchen"
 
+organizationHomepage := Some(url("http://franklinchen.com/"))
+
+homepage := Some(url("http://github.com/FranklinChen/test-scalafx"))
+
+startYear := Some(2013)
+
+description := "Test ScalaFX"
+
 version := "1.0.0"
 
-scalaVersion := "2.10.2-RC2"
+scalaVersion := "2.10.2"
 
 libraryDependencies += "org.scalafx" %% "scalafx" % "1.0.0-M4"
 
