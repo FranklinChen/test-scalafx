@@ -12,11 +12,13 @@ description := "Test ScalaFX"
 
 version := "1.0.0"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
-libraryDependencies += "org.scalafx" %% "scalafx" % "1.0.0-M4"
+scalacOptions += "-deprecation"
 
-libraryDependencies += "org.specs2" %% "specs2" % "2.1.1" % "test"
+libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.0-M2"
+
+libraryDependencies += "org.specs2" %% "specs2" % "2.2.3" % "test"
 
 unmanagedJars in Compile += Attributed.blank(
     file(scala.util.Properties.javaHome) / "lib" / "jfxrt.jar")
